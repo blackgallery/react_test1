@@ -47,10 +47,14 @@ Primary use: Food Farms, Organic Farms
 */
 
 @import 'https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,500,700&display=swap';
-/* @import '../node_modules/font-awesome/css/font-awesome.min.css'; */
-@import './assets/icon/custom-icons/css/custom-icons.css'; 
+@import '../icon/custom-icons/css/custom-icons.css';
+@import '../icon/elegant-icons/style.css';
+@import '../css/font-awesome.min.css';
 
 
+.mobile_menu_area {
+  /*! display: none; */
+}
 .mobile_menu_area ul {
   /*! display: inline !important; */
   text-align: right;
@@ -196,6 +200,11 @@ Primary use: Food Farms, Organic Farms
 /*----------------------------------------------------
     1. Global styles
 ------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,500,700&display=swap');
+@import url('../icon/icofont/icofont.min.css');
+@import url('../icon/custom-icons/css/custom-icons.css');
+@import url('../css/font-awesome.min.css');
+
  
 body {
   background: #fff;
@@ -428,7 +437,7 @@ section {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("assets/images/pre_loader.gif") no-repeat center center;
+  background: #fff url("../images/pre_loader.gif") no-repeat center center;
   color: #000;
 }
 
@@ -537,6 +546,7 @@ section {
   line-height: 36px;
   margin-top: -30px;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   position: absolute;
   text-align: center;
   top: 50.5%;
@@ -1167,13 +1177,16 @@ section {
   /*  Slider Area Styling */
   
 .slide_bg_1 {
-  background: #f0f0f0 url("assets/images/slider1.jpg") no-repeat scroll right center;
+  background: #f0f0f0 url("../images/slider1.jpg") no-repeat scroll right center;
 }
 
 .slide_bg_2 {
-  background: #f0f0f0 url("assets/images/slider2.jpg") no-repeat scroll right center;
+  background: #f0f0f0 url("../images/slider2.jpg") no-repeat scroll right center;
 }
 
+.slide_bg_3 {
+  background: #f0f0f0 url("../images/slider3.jpg") no-repeat scroll right center;
+}
 
 .single_slider {
   background-color: #dddd;
@@ -1361,6 +1374,7 @@ section {
   line-height: 29px;
   margin-top: -77px;
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   position: absolute;
   text-align: center;
   top: 100%;
@@ -1372,11 +1386,14 @@ section {
 
 .slider_home .owl-nav div:hover {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   background: #9dca00 !important;
   color: #fff;
   z-index: 99999;
 }
 
+.slider_home .owl-theme .owl-controls .owl-nav div {
+}
 
 .slider_home .owl-prev .icon-glyph-229::before {
   transform: rotate(-180deg);
@@ -1527,6 +1544,7 @@ section {
  
 .service-item:hover .service_text:after {
   width: 100%;
+  left: ;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -1614,7 +1632,7 @@ section {
   
 .video-section {
   padding: 120px 0px 105px;
-  background: url("assets/images/video_bg.jpg") no-repeat top center;
+  background: url("../images/video_bg.jpg") no-repeat top center;
   background-position: 50% 0%;
 }
 
@@ -1777,7 +1795,7 @@ section {
 ------------------------------------------------------*/
 .whychose-section {
   padding-top: 70px;
-  background: url("assets/images/bg_1.jpg") no-repeat top center;
+  background: url("../images/bg_1.jpg") no-repeat top center;
   background-position: 50% 0%;
 }
 
@@ -1791,7 +1809,7 @@ section {
 }
 
 .whychose_bg {
-  background-image: url("assets/images/why_chose.jpg");
+  background-image: url("../images/why_chose.jpg");
   background-position: left center;
   background-repeat: no-repeat;
   height: 557px;
@@ -1801,7 +1819,7 @@ section {
 
 .whychose_wrp {
   top: 0px;
-  background-image: url("assets/images/why_choose_bg.jpg");
+  background-image: url("../images/why_choose_bg.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   height: auto;
@@ -1952,7 +1970,7 @@ section {
 .pricing-section {
   padding-bottom: 0px;
   background: #F6F8FF;
-  background: url("assets/images/bg_2.jpg") no-repeat top center;
+  background: url("../images/bg_2.jpg") no-repeat top center;
   background-position: 50% 0%;
 }
 
@@ -2216,7 +2234,7 @@ section {
   
 .team-section {
   padding-bottom: 115px;
-  background-image: url("assets/images/bg_3.jpg");
+  background-image: url("../images/bg_3.jpg");
 }
 
 .team_wrp {
@@ -2248,7 +2266,7 @@ section {
   right: 0;
   bottom: 0;
   top: 0px;
-  background: url("assets/images/team_bg.png") no-repeat top center;
+  background: url("../images/team_bg.png") no-repeat top center;
 }
 
 .team_img img {
@@ -2632,7 +2650,7 @@ section {
 }
 
 .contact_bg {
-  background: #F6F8FF url("assets/images/contact_bg.jpg");
+  background: #F6F8FF url("../images/contact_bg.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   height: 673px;
@@ -3050,7 +3068,7 @@ header .container {
 }
 
 header.blog-banner {
-  background: transparent url("assets/images/header.jpg");
+  background: transparent url("../images/header.jpg");
   color: #FFF;
   box-sizing: border-box;
   height: 400px;
@@ -3107,7 +3125,7 @@ header {
     Call to action Section
 ------------------------------------------------------*/
 .cta_bg {
-  /* background-image: url("assets/images/cta_bg.jpg"); */
+  background-image: url("../images/cta_bg.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   height: 300px;
@@ -3178,35 +3196,35 @@ header {
 /* Work items ------------------*/
  
 .single-project-item {
-  background-image: url(assets/images/work-1.jpg);
+  background-image: url(../images/work-1.jpg);
 }
 
 .project-bg-2 {
-  background-image: url(assets/images/work-2.jpg);
+  background-image: url(../images/work-2.jpg);
 }
 
 .project-bg-3 {
-  background-image: url(assets/images/work-3.jpg);
+  background-image: url(../images/work-3.jpg);
 }
 
 .project-bg-4 {
-  background-image: url(assets/images/work-4.jpg);
+  background-image: url(../images/work-4.jpg);
 }
 
 .project-bg-5 {
-  background-image: url(assets/images/work-5.jpg);
+  background-image: url(../images/work-5.jpg);
 }
 
 .project-bg-6 {
-  background-image: url(assets/images/work-1.jpg);
+  background-image: url(../images/work-6.jpg);
 }
 
 .project-bg-7 {
-  background-image: url(assets/images/work-2.jpg);
+  background-image: url(../images/work-7.jpg);
 }
 
 .project-bg-8 {
-  background-image: url(assets/images/work-3.jpg);
+  background-image: url(../images/work-8.jpg);
 }
 
 .single-project-item {
@@ -4614,7 +4632,7 @@ header {
 }
 
 .product_count {
-  display: inline;
+  display: inline-block;
   float: left;
 }
 
